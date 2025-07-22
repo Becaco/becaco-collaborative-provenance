@@ -1,2 +1,2 @@
-# becaco-collaborative-provenance
+# BECACO-Collaborative-Provenance-Research 
 Repository for data preparation scripts, workflows, and documentation to support collaborative provenance research across institutions.

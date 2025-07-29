@@ -70,7 +70,7 @@ Use this structure to describe people involved in the object's history.
 | `LastName`         | Last name                                                                | Recommended    | String                                                  |
 | `FirstName`        | First name                                                               | Recommended    | String                                                  |
 | `WikiData ID`      | Wikidata identifier                                                      | Optional       | Format: Q123456                                         |
-| `Gendr`            | Gender                                                                   | Optional       | e.g., male, female                             |
+| `Gender`            | Gender                                                                   | Optional       | e.g., male, female                             |
 | `BirthDate`        | Date of birth                                                            | Optional       | Format: YYYY-MM-DD                                      |
 | `DeathDate`        | Date of death                                                            | Optional       | Format: YYYY-MM-DD                                      |
 | `Nationality`      | National or cultural affiliation                                         | Optional       | String                                                  |

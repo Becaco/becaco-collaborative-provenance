@@ -120,11 +120,11 @@ To represent the historical trajectory of museum objects, please fill in an Exce
 |------------------|------------------------------------------------------------------------------|-----------|------------------------------------------------------------------------|
 | `Event_ID`       | Unique identifier for the event                                              | ✅ Yes    | Format: Alphanumeric (e.g., `MudecEV169`)                             |
 | `EventType`      | Type of the event                                                            | ✅ Yes    | Examples: Acquisition, Legacy, Collection, Donation, etc.             |
-| `Dates`          | Date(s) associated with the event                                            | ✅ Yes    | One or more years (e.g., `1934` or `1966,1970`). Add `?` for uncertain dates. |
+| `Dates`          | Date(s) associated with the event                                            | ✅ Yes    | One or more years (e.g., `1934` or `1966;1970`). Add `?` for uncertain dates. |
 | `Place`          | Location(s) where the event occurred                                         | Optional | One or more places (e.g., `Rome;Naples`). Add `?` for uncertain places. |
 | `SourceActors`   | Identifier(s) of the actor(s) transferring the object(s)                     | Optional | Actor IDs (e.g., `MudecA20`), separated by commas if multiple         |
 | `TargetActors`   | Identifier(s) of the receiving actor(s) or institution(s)                   | Optional | e.g., `Mudec Museum`                                                  |
-| `ObjectIDs`      | Object identifier(s) involved in the event                                   | ✅ Yes    | `ObjectID`s separated by commas (e.g., `Mudec1,Mudec2`)               |
+| `ObjectIDs`      | Object identifier(s) involved in the event                                   | ✅ Yes    | `ObjectID`s separated by commas (e.g., `Mudec1;Mudec2`)               |
 
 ---
 
@@ -145,7 +145,7 @@ To represent the historical trajectory of museum objects, please fill in an Exce
 
 | Event_ID   | EventType   | Dates       | Place        | SourceActors | TargetActors  | ObjectIDs       |
 |------------|-------------|-------------|--------------|---------------|----------------|------------------|
-| MudecEV169 | Acquisition | 1934        |              | MudecA20      | Mudec Museum   | Mudec1,Mudec2    |
+| MudecEV169 | Acquisition | 1934        |              | MudecA20      | Mudec Museum   | Mudec1;Mudec2    |
 | MudecEV170 | Acquisition | 1865        |              | MudecA21      | Mudec Museum   | Mudec3           |
 | MudecEV171 | Legacy      | 1988?,1987? |              | MudecA44      | Mudec Museum   | Mudec3           |
 | MudecEV172 | Legacy      | 1966,1970   | Rome?;Milan  | MudecA21      | Mudec Museum   | Mudec2           |
@@ -182,7 +182,7 @@ The actors involved in an event depend on the **EventType**. You should refer to
 
 - Always use **actor identifiers (`ActorID`)** already defined in your `Individuals` or `Institutions` sheet.
 - If only one actor is involved (e.g., Creation), fill only `SourceActors`.
-- If multiple actors are involved, separate them with **commas**: `MudecA20,MudecA44`
+- If multiple actors are involved, separate them with `;`: `MudecA20;MudecA44`
 
 
 

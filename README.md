@@ -165,12 +165,12 @@ The actors involved in an event depend on the **EventType**. You should refer to
 | Acquisition         | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Source is the previous owner, target is the acquirer                 |
 | Purchase            | E96_Purchase        | ✅ Yes                    | ✅ Yes                   | Source = seller, target = buyer                                      |
 | Donation            | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Source = donor, target = recipient                                   |
-| Exchange            | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Both parties act as source and target                                |
+| Exchange            | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Source = exchanger, target = recipient                                |
 | Legacy              | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Source = deceased person or estate, target = inheritor               |
-| Donation/Legacy     | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Mixed case (legacy + donation)                                       |
-| Purchase/Legacy     | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Mixed case (legacy + purchase)                                       |
+| Donation/Legacy     | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Source = donor, target = recipient                                       |
+| Purchase/Legacy     | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Source = seller, target = buyer                                       |
 | Seizure             | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Source = original owner, target = seizing institution                |
-| Excavation          | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Source = archaeological site or landowner, target = excavator        |
+| Excavation          | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Source = Archaeologist , target = recipient                          |
 | Loan                | E8_Acquisition      | ✅ Yes                    | ✅ Yes                   | Source = lender, target = borrower                                   |
 | Previous Collection | E8_Acquisition      | ✅ Yes                    | ❌ No                    | Source = previous collector                                          |
 
